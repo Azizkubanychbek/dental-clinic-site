@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Aurelle — стоматологическое ателье в Бишкеке</title>
+  <meta name="description" content="Aurelle — концепт-сайт вымышленного стоматологического ателье в Бишкеке: имплантация, элайнеры, виниры, цифровая диагностика.">
+  <meta name="theme-color" content="#F4EFE6">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231E1D1B'/%3E%3Cpath d='M18 48 L32 14 L46 48 M23 37 H41' fill='none' stroke='%23C9AE7E' stroke-width='2.4'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <!-- ============ LOADER ============ -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <svg class="loader__mark" viewBox="0 0 120 120">
+        <circle class="loader__ring" cx="60" cy="60" r="54" pathLength="1"/>
+        <path class="loader__a" d="M36 86 L60 30 L84 86 M44 68 H76" pathLength="1"/>
+      </svg>
+      <div class="loader__word">Aurelle</div>
+      <div class="loader__meta"><span class="loader__count">00</span><span>Бишкек · стоматологическое ателье</span></div>
+    </div>
+    <div class="loader__curtain"></div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><div class="cursor__ring"><span class="cursor__label"></span></div><div class="cursor__dot"></div></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="top">
+    <a class="logo" href="#top" aria-label="Aurelle — на главную">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18.5"/><path d="M12 29 L20 10 L28 29 M14.8 22.5 H25.2"/></svg>
+      <span>Aurelle</span>
+    </a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#philosophy">Философия</a>
+      <a href="#services">Услуги</a>
+      <a href="#technology">Технологии</a>
+      <a href="#doctors">Врачи</a>
+      <a href="#prices">Цены</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn btn--small btn--dark header__cta" href="#booking" data-magnetic><span>Записаться</span></a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav aria-label="Мобильная навигация">
+      <a href="#philosophy"><i>01</i>Философия</a>
+      <a href="#services"><i>02</i>Услуги</a>
+      <a href="#technology"><i>03</i>Технологии</a>
+      <a href="#doctors"><i>04</i>Врачи</a>
+      <a href="#prices"><i>05</i>Цены</a>
+      <a href="#booking"><i>06</i>Запись</a>
+    </nav>
+    <p>+996 (312) 90-00-00<br>ул. Токтогула, 125 · Бишкек</p>
+  </div>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-label="Aurelle — стоматологическое ателье">
+      <div class="hero__pin">
+        <div class="hero__grid" aria-hidden="true"></div>
+        <div class="hero__glow" aria-hidden="true"></div>
+
+        <div class="hero__content">
+          <p class="eyebrow hero__eyebrow"><span class="dot"></span>Стоматологическое ателье · Бишкек</p>
+          <h1 class="hero__title" data-split-hero>
+            <span class="line">Улыбка,</span>
+            <span class="line"><em>собранная</em> с</span>
+            <span class="line">точностью ювелира</span>
+          </h1>
+          <p class="hero__lead">Имплантация, эстетика и цифровая диагностика — в пространстве, где каждое движение рассчитано до десятой доли миллиметра.</p>
+          <div class="hero__actions">
+            <a class="btn btn--dark" href="#booking" data-magnetic><span>Записаться на консультацию</span></a>
+            <a class="btn btn--ghost" href="#services" data-magnetic><span>Услуги</span></a>
+          </div>
+        </div>
+
+        <div class="hero__stage">
+          <div class="hero__stamp" aria-hidden="true">
+            <span>AUR · IMP · 01</span><span>Масштаб 8:1</span><span class="hero__sheet">Лист <b>1</b>/3</span>
+          </div>
+          <svg class="implant" viewBox="0 0 600 820" role="img" aria-label="Чертёж зубного импланта: винт, абатмент и коронка собираются в единую конструкцию">
+            <defs>
+              <linearGradient id="gCrown" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#FFFEFB"/>
+                <stop offset=".5" stop-color="#F3ECDF"/>
+                <stop offset="1" stop-color="#D8CAB0"/>
+              </linearGradient>
+              <radialGradient id="gCrownHi" cx=".35" cy=".25" r=".5">
+                <stop offset="0" stop-color="#fff" stop-opacity=".95"/>
+                <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="gTi" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#5E584F"/>
+                <stop offset=".3" stop-color="#B9AB91"/>
+                <stop offset=".48" stop-color="#F4EDE0"/>
+                <stop offset=".66" stop-color="#A49478"/>
+                <stop offset="1" stop-color="#4E4942"/>
+              </linearGradient>
+              <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#7A6440"/>
+                <stop offset=".45" stop-color="#E8D6B0"/>
+                <stop offset="1" stop-color="#6E5A3A"/>
+              </linearGradient>
+              <radialGradient id="gHalo" cx=".5" cy=".5" r=".5">
+                <stop offset="0" stop-color="#F6E7C6" stop-opacity=".9"/>
+                <stop offset=".6" stop-color="#E7D3A8" stop-opacity=".25"/>
+                <stop offset="1" stop-color="#E7D3A8" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+
+            <!-- registration / construction geometry -->
+            <g class="bp bp-construct">
+              <circle cx="300" cy="420" r="262" class="dash"/>
+              <circle cx="300" cy="420" r="196" pathLength="1"/>
+              <line x1="300" y1="20" x2="300" y2="800" class="axis"/>
+              <line x1="20" y1="420" x2="580" y2="420" class="dash"/>
+              <path d="M34 34 h26 M34 34 v26 M566 34 h-26 M566 34 v26 M34 786 h26 M34 786 v-26 M566 786 h-26 M566 786 v-26" pathLength="1"/>
+            </g>
+
+            <ellipse class="halo" cx="300" cy="380" rx="250" ry="300" fill="url(#gHalo)"/>
+
+            <!-- tissue: gum + bone -->
+            <g class="bp tissue">
+              <path d="M70 470 C 140 450, 200 466, 262 458 M338 458 C 400 466, 460 450, 530 470" pathLength="1"/>
+              <path d="M90 520 C 170 505, 220 515, 262 512 M338 512 C 380 515, 430 505, 510 520" class="dash"/>
+              <path d="M110 560 l26 -26 M140 566 l30 -30 M176 566 l34 -34 M214 562 l38 -38 M386 562 l38 -38 M424 566 l34 -34 M458 566 l30 -30 M494 560 l26 -26" pathLength="1" class="thin"/>
+            </g>
+
+            <!-- SCREW (implant body) -->
+            <g class="part part-screw">
+              <g class="solid">
+                <path d="M266 452 L334 452 L330 670 C326 705 312 722 300 724 C288 722 274 705 270 670 Z" fill="url(#gTi)"/>
+                <path d="M261 478 L339 485 M261 496 L339 503 M261 514 L339 521 M261 532 L339 539 M261 550 L339 557 M262 568 L338 575 M262 586 L338 593 M263 604 L337 611 M264 622 L336 629 M265 640 L335 647 M267 658 L333 665 M271 676 L329 683" stroke="#4E4942" stroke-opacity=".55" stroke-width="3" fill="none"/>
+              </g>
+              <g class="bp lines">
+                <path d="M266 452 L334 452 L330 670 C326 705 312 722 300 724 C288 722 274 705 270 670 Z" pathLength="1"/>
+                <path d="M261 478 L339 485 M261 496 L339 503 M261 514 L339 521 M261 532 L339 539 M261 550 L339 557 M262 568 L338 575 M262 586 L338 593 M263 604 L337 611 M264 622 L336 629 M265 640 L335 647 M267 658 L333 665 M271 676 L329 683" pathLength="1" class="thin"/>
+                <path d="M286 452 L286 470 L314 470 L314 452" pathLength="1" class="thin"/>
+              </g>
+              <g class="annot">
+                <path d="M334 560 L400 600 L560 600" pathLength="1" class="bp thin"/>
+                <circle cx="334" cy="560" r="3" class="node"/>
+                <text x="404" y="590" class="t-label">Имплант</text>
+                <text x="404" y="616" class="t-sub">Титан Grade 5 · SLA</text>
+                <path d="M228 452 L228 724 M220 452 h16 M220 724 h16" pathLength="1" class="bp thin"/>
+                <text x="214" y="596" class="t-dim" transform="rotate(-90 214 596)">L 11.5</text>
+                <path d="M266 752 L334 752 M266 744 v16 M334 744 v16" pathLength="1" class="bp thin"/>
+                <text x="300" y="776" class="t-dim" text-anchor="middle">Ø 4.1</text>
+              </g>
+            </g>
+
+            <!-- ABUTMENT -->
+            <g class="part part-abutment">
+              <g class="solid">
+                <path d="M272 350 L328 350 L334 410 L266 410 Z" fill="url(#gGold)"/>
+                <path d="M258 410 L342 410 L336 436 L264 436 Z" fill="url(#gTi)"/>
+                <path d="M284 436 L316 436 L312 452 L288 452 Z" fill="url(#gTi)"/>
+              </g>
+              <g class="bp lines">
+                <path d="M272 350 L328 350 L334 410 L266 410 Z" pathLength="1"/>
+                <path d="M258 410 L342 410 L336 436 L264 436 Z" pathLength="1"/>
+                <path d="M284 436 L316 436 L312 452 L288 452 Z" pathLength="1"/>
+                <path d="M276 372 H324 M278 392 H322" class="thin dash"/>
+              </g>
+              <g class="annot">
+                <path d="M266 400 L200 370 L46 370" pathLength="1" class="bp thin"/>
+                <circle cx="266" cy="400" r="3" class="node"/>
+                <text x="50" y="360" class="t-label">Абатмент</text>
+                <text x="50" y="388" class="t-sub">Индивидуальный · CAD/CAM</text>
+              </g>
+            </g>
+
+            <!-- CROWN -->
+            <g class="part part-crown">
+              <g class="solid">
+                <path d="M200 300 C190 240 195 170 230 140 C250 125 270 150 285 140 C295 132 305 132 315 140 C330 150 350 125 370 140 C405 170 410 240 400 300 C395 322 370 338 300 338 C230 338 205 322 200 300 Z" fill="url(#gCrown)"/>
+                <path d="M222 170 C238 150 262 160 272 156 C258 190 236 230 226 262 C214 232 212 196 222 170 Z" fill="url(#gCrownHi)"/>
+                <path d="M238 160 C262 176 282 168 300 176 C318 168 338 176 362 160" stroke="#CDBC9C" stroke-width="2" fill="none" opacity=".7"/>
+              </g>
+              <g class="bp lines">
+                <path d="M200 300 C190 240 195 170 230 140 C250 125 270 150 285 140 C295 132 305 132 315 140 C330 150 350 125 370 140 C405 170 410 240 400 300 C395 322 370 338 300 338 C230 338 205 322 200 300 Z" pathLength="1"/>
+                <path d="M226 296 C218 246 222 190 246 166 C262 152 280 170 300 160 C320 170 338 152 354 166 C378 190 382 246 374 296 C368 312 350 320 300 320 C250 320 232 312 226 296 Z" class="thin dash"/>
+                <path d="M238 160 C262 176 282 168 300 176 C318 168 338 176 362 160" pathLength="1" class="thin"/>
+              </g>
+              <g class="annot">
+                <path d="M392 196 L452 150 L566 150" pathLength="1" class="bp thin"/>
+                <circle cx="392" cy="196" r="3" class="node"/>
+                <text x="456" y="140" class="t-label">Коронка</text>
+                <text x="456" y="168" class="t-sub">Диоксид циркония</text>
+                <path d="M200 102 L400 102 M200 94 v16 M400 94 v16" pathLength="1" class="bp thin"/>
+                <text x="300" y="86" class="t-dim" text-anchor="middle">10.2 мм</text>
+              </g>
+            </g>
+          </svg>
+
+          <ol class="hero__steps" aria-hidden="true">
+            <li class="is-active"><b>01</b><span>Чертёж</span><p>Лечение начинается с цифрового плана: КЛКТ, скан, расчёт каждой оси.</p></li>
+            <li><b>02</b><span>Сборка</span><p>Титановый имплант, индивидуальный абатмент, коронка из циркония.</p></li>
+            <li><b>03</b><span>Свет</span><p>Результат, который выглядит как природа — и служит десятилетиями.</p></li>
+          </ol>
+        </div>
+
+        <div class="hero__scroll" aria-hidden="true"><span>Листайте</span><i></i></div>
+        <div class="hero__progress" aria-hidden="true"><i></i></div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Имплантация <i>✦</i> Элайнеры <i>✦</i> Виниры <i>✦</i> Эстетика <i>✦</i> Микроскоп <i>✦</i> Цифровая улыбка <i>✦</i></span>
+        <span>Имплантация <i>✦</i> Элайнеры <i>✦</i> Виниры <i>✦</i> Эстетика <i>✦</i> Микроскоп <i>✦</i> Цифровая улыбка <i>✦</i></span>
+      </div>
+    </div>
+
+    <!-- ============ PHILOSOPHY ============ -->
+    <section class="section philosophy" id="philosophy">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow"><span class="num">01</span>Философия</p>
+        </div>
+        <p class="philosophy__text" data-words>
+          Мы верим, что лучшая стоматология — <em>незаметна.</em> Никакой спешки и никакого конвейера: один пациент, один врач и всё время, которое нужно вашему случаю. Тишина, свет и точность — наши главные инструменты.
+        </p>
+        <div class="philosophy__row">
+          <div class="philosophy__figure" data-speed="-0.12" aria-hidden="true">
+            <svg viewBox="0 0 400 480">
+              <defs>
+                <linearGradient id="gArch" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#EDE4D3"/><stop offset="1" stop-color="#D8C8AA"/>
+                </linearGradient>
+              </defs>
+              <path d="M40 480 V200 A160 160 0 0 1 360 200 V480 Z" fill="url(#gArch)"/>
+              <path class="draw" d="M70 480 V206 A130 130 0 0 1 330 206 V480" fill="none" pathLength="1"/>
+              <circle cx="200" cy="210" r="64" fill="#F8F3EA" opacity=".85"/>
+              <path class="draw" d="M200 120 V420 M110 210 H290" fill="none" pathLength="1" opacity=".5"/>
+              <text x="200" y="455" text-anchor="middle" class="fig-caption">EST. 2012 · BISHKEK</text>
+            </svg>
+          </div>
+          <div class="philosophy__aside">
+            <p>Aurelle задумано как ателье, а не клиника: четыре кабинета, собственная зуботехническая лаборатория и врачи, которые планируют лечение вместе. Мы не продаём процедуры — мы проектируем здоровье на годы вперёд.</p>
+            <a class="link-arrow" href="#doctors" data-magnetic>Познакомиться с врачами <span>→</span></a>
+          </div>
+        </div>
+        <dl class="stats">
+          <div class="stat"><dt>Лет практики</dt><dd><span data-count="14">0</span></dd></div>
+          <div class="stat"><dt>Установленных имплантов</dt><dd><span data-count="5200" data-format="space">0</span><sup>+</sup></dd></div>
+          <div class="stat"><dt>Врачей-специалистов</dt><dd><span data-count="9">0</span></dd></div>
+          <div class="stat"><dt>Точность навигации, мм</dt><dd><span data-count="0.1" data-decimals="1">0</span></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES (horizontal) ============ -->
+    <section class="services" id="services">
+      <div class="services__pin">
+        <div class="services__head container">
+          <p class="eyebrow"><span class="num">02</span>Услуги</p>
+          <h2 class="h2" data-split>Шесть направлений — <em>одна</em> школа</h2>
+          <div class="services__progress" aria-hidden="true"><i></i></div>
+        </div>
+        <div class="services__viewport">
+          <ul class="services__track">
+            <li class="card">
+              <div class="card__top"><span class="card__num">01</span><span class="card__price">от 45 000 сом</span></div>
+              <svg class="card__icon" viewBox="0 0 120 120" aria-hidden="true"><path pathLength="1" d="M42 28 C42 18 52 16 60 20 C68 16 78 18 78 28 C80 40 74 48 60 48 C46 48 40 40 42 28 Z M52 48 H68 L66 60 H54 Z M54 60 H66 L64 98 Q60 104 56 98 Z M52 68 L68 71 M52 76 L68 79 M53 84 L67 87 M54 92 L66 95"/></svg>
+              <h3>Имплантация</h3>
+              <p>Навигационная хирургия по цифровому шаблону. Премиальные системы имплантов, пожизненный паспорт конструкции.</p>
+              <span class="card__more">Подробнее <i>→</i></span>
+            </li>
+            <li class="card">
+              <div class="card__top"><span class="card__num">02</span><span class="card__price">от 120 000 сом</span></div>
+              <svg class="card__icon" viewBox="0 0 120 120" aria-hidden="true"><path pathLength="1" d="M18 64 C24 40 44 30 60 30 C76 30 96 40 102 64 M26 64 C30 48 44 40 60 40 C76 40 90 48 94 64 M30 46 V58 M42 36 V50 M60 32 V44 M78 36 V50 M90 46 V58 M14 74 H106"/></svg>
+              <h3>Элайнеры</h3>
+              <p>Невидимое выравнивание с цифровым прогнозом: вы увидите будущую улыбку до начала лечения.</p>
+              <span class="card__more">Подробнее <i>→</i></span>
+            </li>
+            <li class="card">
+              <div class="card__top"><span class="card__num">03</span><span class="card__price">от 38 000 сом / ед.</span></div>
+              <svg class="card__icon" viewBox="0 0 120 120" aria-hidden="true"><path pathLength="1" d="M40 24 H80 C86 24 88 30 88 36 L84 86 C83 94 76 98 60 98 C44 98 37 94 36 86 L32 36 C32 30 34 24 40 24 Z M46 30 H74 C78 30 80 34 80 38 L77 84 C76 89 70 92 60 92 C50 92 44 89 43 84 L40 38 C40 34 42 30 46 30 Z M96 30 L104 22 M98 44 H108"/></svg>
+              <h3>Виниры</h3>
+              <p>Керамика ручной работы толщиной от 0,3 мм. Форму и оттенок мы выбираем вместе, примеряя прототип.</p>
+              <span class="card__more">Подробнее <i>→</i></span>
+            </li>
+            <li class="card">
+              <div class="card__top"><span class="card__num">04</span><span class="card__price">от 12 000 сом</span></div>
+              <svg class="card__icon" viewBox="0 0 120 120" aria-hidden="true"><path pathLength="1" d="M60 40 C46 40 40 50 42 62 C44 74 50 88 60 88 C70 88 76 74 78 62 C80 50 74 40 60 40 Z M60 14 V26 M60 102 V108 M24 60 H32 M88 60 H96 M34 34 L40 40 M86 34 L80 40 M34 86 L40 80 M86 86 L80 80"/></svg>
+              <h3>Отбеливание</h3>
+              <p>Бережное профессиональное отбеливание без повышенной чувствительности. Результат — естественный, не «пластиковый».</p>
+              <span class="card__more">Подробнее <i>→</i></span>
+            </li>
+            <li class="card">
+              <div class="card__top"><span class="card__num">05</span><span class="card__price">от 3 500 сом</span></div>
+              <svg class="card__icon" viewBox="0 0 120 120" aria-hidden="true"><path pathLength="1" d="M60 30 C50 30 44 38 44 50 C44 64 50 72 60 72 C70 72 76 64 76 50 C76 38 70 30 60 30 Z M52 50 h.1 M68 50 h.1 M52 60 C56 64 64 64 68 60 M34 96 C38 82 48 76 60 76 C72 76 82 82 86 96 M88 26 l4 8 8 2 -8 2 -4 8 -4 -8 -8 -2 8 -2 Z"/></svg>
+              <h3>Детская стоматология</h3>
+              <p>Спокойные приёмы в игровой форме и профилактика с первых зубов. Ребёнок уходит с улыбкой — буквально.</p>
+              <span class="card__more">Подробнее <i>→</i></span>
+            </li>
+            <li class="card">
+              <div class="card__top"><span class="card__num">06</span><span class="card__price">от 6 000 сом</span></div>
+              <svg class="card__icon" viewBox="0 0 120 120" aria-hidden="true"><path pathLength="1" d="M20 30 H100 V82 H20 Z M50 82 L46 96 H74 L70 82 M36 68 L48 52 L58 60 L72 42 L84 54 M28 38 H44 M28 44 H38"/></svg>
+              <h3>Цифровая диагностика</h3>
+              <p>КЛКТ, интраоральное сканирование и цифровой дизайн улыбки — за один визит и без оттисков.</p>
+              <span class="card__more">Подробнее <i>→</i></span>
+            </li>
+            <li class="card card--end">
+              <p class="card__end-title">Не знаете, с чего начать?</p>
+              <a class="btn btn--dark" href="#booking" data-magnetic><span>Консультация · 2 500 сом</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TECHNOLOGY ============ -->
+    <section class="section technology dark" id="technology">
+      <div class="tech__bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow"><span class="num">03</span>Технологии</p>
+          <h2 class="h2" data-split>Точность, которую <em>видно</em> под увеличением</h2>
+        </div>
+
+        <div class="tech">
+          <article class="tech__item">
+            <div class="tech__visual tech__visual--scan">
+              <canvas class="pointcloud" aria-label="Облако точек: трёхмерный скан зуба" role="img"></canvas>
+              <div class="tech__hud" aria-hidden="true">
+                <span>SCAN · 3D</span><span class="tech__hud-val">Точки: <b data-points>0</b></span><span>Точность 20 мкм</span>
+              </div>
+            </div>
+            <div class="tech__text">
+              <span class="tech__idx">3.1</span>
+              <h3>Интраоральное 3D-сканирование</h3>
+              <p>Вместо слепочной массы — лёгкий сканер. За две минуты он создаёт точную цифровую модель зубов, по которой лаборатория изготавливает конструкции без примерок «на глаз».</p>
+              <ul class="specs"><li><b>2 мин</b> полный скан челюсти</li><li><b>20 мкм</b> точность модели</li></ul>
+            </div>
+          </article>
+
+          <article class="tech__item tech__item--rev">
+            <div class="tech__visual">
+              <svg class="microscope" viewBox="0 0 520 520" aria-label="Чертёж операционного микроскопа" role="img">
+                <g class="bp-d">
+                  <path class="dash" d="M20 470 H500"/>
+                  <path pathLength="1" d="M120 470 H260 L250 448 H130 Z"/>
+                  <path pathLength="1" d="M180 448 V120 M196 448 V120"/>
+                  <path pathLength="1" d="M170 120 H206 V100 H170 Z"/>
+                  <path pathLength="1" d="M188 110 L330 160 M190 124 L326 172"/>
+                  <circle pathLength="1" cx="188" cy="112" r="10"/>
+                  <circle pathLength="1" cx="332" cy="168" r="12"/>
+                  <path pathLength="1" d="M332 180 V230"/>
+                  <path pathLength="1" d="M298 230 H366 L374 274 H290 Z"/>
+                  <path pathLength="1" d="M304 230 L284 186 M316 230 L300 182 M282 186 L274 172 L290 166 L300 182"/>
+                  <path pathLength="1" d="M314 274 H352 V300 H314 Z"/>
+                  <path pathLength="1" class="beam" d="M318 300 L276 430 M348 300 L390 430"/>
+                  <path class="dash" d="M276 430 C300 440 366 440 390 430"/>
+                  <path pathLength="1" class="dim" d="M440 230 V430 M432 230 H448 M432 430 H448"/>
+                  <text x="456" y="336" class="t-dim-d" transform="rotate(90 456 336)">f = 250 мм</text>
+                  <path pathLength="1" class="dim" d="M90 120 V448 M82 120 H98 M82 448 H98"/>
+                </g>
+                <g class="lens">
+                  <circle cx="110" cy="250" r="66" class="lens__ring"/>
+                  <path pathLength="1" class="bp-d" d="M80 214 C88 236 92 270 98 300 M140 214 C132 236 128 270 122 300 M98 300 C104 308 116 308 122 300 M110 222 V292"/>
+                  <path class="bp-d dash" d="M176 250 L300 360"/>
+                  <text x="110" y="342" text-anchor="middle" class="t-dim-d">×24</text>
+                </g>
+              </svg>
+            </div>
+            <div class="tech__text">
+              <span class="tech__idx">3.2</span>
+              <h3>Лечение под микроскопом</h3>
+              <p>Операционный микроскоп с увеличением до 24 раз. Врач видит то, что недоступно глазу: микротрещины, дополнительные каналы, границу реставрации — и сохраняет максимум живых тканей.</p>
+              <ul class="specs"><li><b>×24</b> увеличение</li><li><b>100%</b> эндодонтии под микроскопом</li></ul>
+            </div>
+          </article>
+        </div>
+
+        <ul class="tech__list">
+          <li><span>КЛКТ</span>Объёмная томография с минимальной дозой</li>
+          <li><span>DSD</span>Цифровой дизайн улыбки и примерка прототипа</li>
+          <li><span>LAB</span>Собственная лаборатория CAD/CAM</li>
+          <li><span>NAV</span>Навигационные хирургические шаблоны</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ DOCTORS ============ -->
+    <section class="section doctors" id="doctors">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow"><span class="num">04</span>Врачи</p>
+            <h2 class="h2" data-split>Люди, которым <em>доверяют</em> улыбки</h2>
+          </div>
+          <p class="section-head__note">Каждый случай обсуждается на врачебном консилиуме. Вы получаете не одного специалиста, а команду.</p>
+        </div>
+        <ul class="doctors__grid">
+          <li class="doctor" data-reveal>
+            <div class="doctor__portrait" data-portrait="0" data-initial="А"></div>
+            <h3>Айдана Сыдыкова</h3>
+            <p>Главный врач · хирург-имплантолог</p>
+            <span>Стаж 16 лет</span>
+          </li>
+          <li class="doctor" data-reveal>
+            <div class="doctor__portrait" data-portrait="1" data-initial="Т"></div>
+            <h3>Тимур Абдыкадыров</h3>
+            <p>Ортодонт · элайнерная терапия</p>
+            <span>Стаж 11 лет</span>
+          </li>
+          <li class="doctor" data-reveal>
+            <div class="doctor__portrait" data-portrait="2" data-initial="Е"></div>
+            <h3>Елена Воронова</h3>
+            <p>Стоматолог-эстетист · виниры</p>
+            <span>Стаж 13 лет</span>
+          </li>
+          <li class="doctor" data-reveal>
+            <div class="doctor__portrait" data-portrait="3" data-initial="Б"></div>
+            <h3>Бекжан Осмонов</h3>
+            <p>Эндодонтист · микроскоп</p>
+            <span>Стаж 9 лет</span>
+          </li>
+        </ul>
+        <p class="footnote">Имена и портреты вымышлены и использованы для демонстрации макета.</p>
+      </div>
+    </section>
+
+    <!-- ============ JOURNEY ============ -->
+    <section class="section journey" id="journey">
+      <div class="container journey__wrap">
+        <div class="journey__head">
+          <p class="eyebrow"><span class="num">05</span>Путь пациента</p>
+          <h2 class="h2" data-split>Пять шагов <em>без</em> суеты</h2>
+          <p class="journey__note">От первого звонка до гарантийного осмотра вас сопровождает личный куратор.</p>
+        </div>
+        <ol class="journey__steps">
+          <li class="journey__line" aria-hidden="true"><i></i></li>
+          <li class="step"><span class="step__num">01</span><div><h3>Знакомство</h3><p>Неспешная консультация: обсуждаем ожидания, историю и всё, что вас беспокоит. Кофе — обязательно.</p></div></li>
+          <li class="step"><span class="step__num">02</span><div><h3>Диагностика</h3><p>КЛКТ, интраоральный скан и фотопротокол. Полная картина за один визит.</p></div></li>
+          <li class="step"><span class="step__num">03</span><div><h3>План и смета</h3><p>Цифровой дизайн улыбки и прозрачный план лечения. Стоимость фиксируется в договоре.</p></div></li>
+          <li class="step"><span class="step__num">04</span><div><h3>Лечение</h3><p>Под микроскопом, в комфортном темпе. Седация — по вашему желанию.</p></div></li>
+          <li class="step"><span class="step__num">05</span><div><h3>Сопровождение</h3><p>Гарантия до 10 лет, профилактические визиты и куратор на связи.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ BEFORE / AFTER ============ -->
+    <section class="section ba-section" id="results">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow"><span class="num">06</span>До и после</p>
+            <h2 class="h2" data-split>Разница, которую <em>чувствуешь</em></h2>
+          </div>
+          <p class="section-head__note">Иллюстрация: эстетическая реставрация шести фронтальных зубов керамическими винирами. Потяните разделитель.</p>
+        </div>
+        <div class="ba" data-reveal style="--pos:50%">
+          <div class="ba__layer ba__before"><svg class="smile" data-variant="before" viewBox="0 0 800 450" aria-hidden="true"></svg></div>
+          <div class="ba__layer ba__after"><svg class="smile" data-variant="after" viewBox="0 0 800 450" aria-hidden="true"></svg></div>
+          <span class="ba__tag ba__tag--l">До</span>
+          <span class="ba__tag ba__tag--r">После</span>
+          <div class="ba__handle" aria-hidden="true"><span>‹ ›</span></div>
+          <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Сравнение до и после: положение разделителя" data-cursor="Тяните">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICES ============ -->
+    <section class="section prices" id="prices">
+      <div class="container prices__wrap">
+        <div class="prices__head">
+          <p class="eyebrow"><span class="num">07</span>Стоимость</p>
+          <h2 class="h2" data-split>Цены <em>от</em></h2>
+          <p class="prices__note">Точная стоимость определяется после диагностики и фиксируется в плане лечения. Цены указаны в сомах и носят демонстрационный характер.</p>
+        </div>
+        <div class="prices__list">
+          <div class="price-group" data-reveal>
+            <h3>Диагностика</h3>
+            <dl>
+              <div class="price"><dt>Консультация и план лечения</dt><dd>2 500</dd></div>
+              <div class="price"><dt>КЛКТ обеих челюстей</dt><dd>4 500</dd></div>
+              <div class="price"><dt>Цифровой дизайн улыбки</dt><dd>8 000</dd></div>
+            </dl>
+          </div>
+          <div class="price-group" data-reveal>
+            <h3>Хирургия и ортопедия</h3>
+            <dl>
+              <div class="price"><dt>Имплант премиальной системы</dt><dd>от 45 000</dd></div>
+              <div class="price"><dt>Коронка из диоксида циркония</dt><dd>от 28 000</dd></div>
+              <div class="price"><dt>Керамический винир</dt><dd>от 38 000</dd></div>
+            </dl>
+          </div>
+          <div class="price-group" data-reveal>
+            <h3>Терапия и эстетика</h3>
+            <dl>
+              <div class="price"><dt>Профессиональная гигиена</dt><dd>6 500</dd></div>
+              <div class="price"><dt>Лечение каналов под микроскопом</dt><dd>от 15 000</dd></div>
+              <div class="price"><dt>Отбеливание</dt><dd>от 12 000</dd></div>
+              <div class="price"><dt>Элайнеры, полный курс</dt><dd>от 120 000</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section testimonials" aria-labelledby="t-title">
+      <div class="container">
+        <p class="eyebrow" id="t-title"><span class="num">08</span>Отзывы</p>
+        <div class="quotes" aria-live="polite">
+          <figure class="quote is-active">
+            <blockquote>«Впервые в жизни я ждала визита к стоматологу. Тихо, спокойно, и мне объяснили каждый шаг — до миллиметра.»</blockquote>
+            <figcaption>Алина К. · имплантация</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>«Элайнеры носил почти год, и никто на работе не заметил. Заметили только результат.»</blockquote>
+            <figcaption>Марат Т. · элайнеры</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>«Виниры выглядят так естественно, что подруги спрашивают, что я изменила. Отвечаю: просто выспалась.»</blockquote>
+            <figcaption>Ольга С. · виниры</figcaption>
+          </figure>
+        </div>
+        <div class="quotes__nav">
+          <button class="round-btn" data-quote="prev" aria-label="Предыдущий отзыв" data-magnetic>←</button>
+          <span class="quotes__count"><b>01</b> / 03</span>
+          <button class="round-btn" data-quote="next" aria-label="Следующий отзыв" data-magnetic>→</button>
+        </div>
+        <p class="footnote">Отзывы иллюстративные и не принадлежат реальным пациентам.</p>
+      </div>
+    </section>
+
+    <!-- ============ BOOKING ============ -->
+    <section class="section booking" id="booking">
+      <div class="booking__glow" aria-hidden="true"></div>
+      <div class="container booking__wrap">
+        <div class="booking__head">
+          <p class="eyebrow"><span class="num">09</span>Запись</p>
+          <h2 class="h2" data-split>Начнём с <em>разговора</em></h2>
+          <p>Оставьте контакты — куратор перезвонит в течение часа в рабочее время, чтобы подобрать удобный день и врача.</p>
+          <ul class="booking__facts">
+            <li><b>Пн–Сб</b> 09:00 — 20:00</li>
+            <li><b>+996 (312) 90-00-00</b></li>
+          </ul>
+        </div>
+        <form class="form" novalidate>
+          <div class="field">
+            <input id="f-name" name="name" type="text" autocomplete="name" placeholder=" " required minlength="2">
+            <label for="f-name">Ваше имя</label>
+            <span class="field__err">Пожалуйста, укажите имя</span>
+          </div>
+          <div class="field">
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder=" " required inputmode="tel">
+            <label for="f-phone">Телефон</label>
+            <span class="field__err">Укажите номер, например +996 555 123 456</span>
+          </div>
+          <div class="field field--select">
+            <select id="f-service" name="service" required>
+              <option value="" disabled selected hidden></option>
+              <option>Консультация</option>
+              <option>Имплантация</option>
+              <option>Элайнеры</option>
+              <option>Виниры</option>
+              <option>Отбеливание</option>
+              <option>Детская стоматология</option>
+              <option>Цифровая диагностика</option>
+            </select>
+            <label for="f-service">Направление</label>
+            <span class="field__err">Выберите направление</span>
+          </div>
+          <div class="field">
+            <input id="f-date" name="date" type="date" placeholder=" ">
+            <label for="f-date" class="is-fixed">Желаемая дата</label>
+          </div>
+          <div class="field field--wide">
+            <textarea id="f-msg" name="message" rows="3" placeholder=" "></textarea>
+            <label for="f-msg">Комментарий (необязательно)</label>
+          </div>
+          <label class="check field--wide">
+            <input type="checkbox" name="consent" required>
+            <span class="check__box" aria-hidden="true"></span>
+            <span>Согласен(на) на обработку персональных данных</span>
+          </label>
+          <div class="form__foot field--wide">
+            <button class="btn btn--dark btn--lg" type="submit" data-magnetic><span>Отправить заявку</span></button>
+            <p class="form__demo">Демо-форма: данные не отправляются.</p>
+          </div>
+          <div class="form__success" role="status" aria-live="polite" hidden>
+            <svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="36" pathLength="1"/><path d="M25 41 L36 52 L56 30" pathLength="1"/></svg>
+            <h3>Спасибо<span class="form__success-name"></span></h3>
+            <p>Это демонстрационная форма — заявка никуда не отправлена. В настоящем ателье куратор перезвонил бы вам в течение часа.</p>
+            <button type="button" class="link-arrow form__reset">Заполнить снова <span>↺</span></button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer dark" id="contacts">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__col">
+          <h3>Адрес</h3>
+          <p>ул. Токтогула, 125<br>Бишкек, Кыргызстан</p>
+        </div>
+        <div class="footer__col">
+          <h3>Часы</h3>
+          <p>Пн–Сб · 09:00 — 20:00<br>Вс · по предварительной записи</p>
+        </div>
+        <div class="footer__col">
+          <h3>Связь</h3>
+          <p><a href="tel:+996312900000">+996 (312) 90-00-00</a><br><a href="mailto:hello@aurelle.example">hello@aurelle.example</a></p>
+        </div>
+        <div class="footer__map" aria-hidden="true">
+          <svg viewBox="0 0 320 180">
+            <path class="map-grid" d="M0 30 H320 M0 75 H320 M0 120 H320 M0 160 H320 M40 0 V180 M110 0 V180 M190 0 V180 M260 0 V180"/>
+            <path class="map-road" d="M0 98 C80 92 140 104 320 88 M150 0 C146 60 156 120 150 180"/>
+            <circle cx="152" cy="96" r="14" class="map-pulse"/>
+            <circle cx="152" cy="96" r="4" class="map-pin"/>
+            <text x="170" y="84" class="map-label">AURELLE</text>
+          </svg>
+        </div>
+      </div>
+      <div class="footer__word" aria-hidden="true">Aurelle</div>
+      <div class="footer__bottom">
+        <span>© 2026 Aurelle · стоматологическое ателье</span>
+        <span>Вымышленный бренд. Концепт-сайт, не является медицинской рекламой.</span>
+        <a href="#top" class="link-arrow" data-magnetic>Наверх <span>↑</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="assets/js/visuals.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
